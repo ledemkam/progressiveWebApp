@@ -1,0 +1,31 @@
+// api- keywords
+
+
+// https://api.themoviedb.org/3/search/movie?api_key=Yourkeys&query=Jack+Reacher
+
+// manifest.json:
+standalone == url löschen
+
+//emulator:
+android pie (projektadress: 10.0.2..2: 5500)
+
+//check lighthouse um PWA zu kontrollieren
+
+//HTTP auf mobile :
+auf dem link gehen : chrome://inspect/#devices
+dann in dem emulator von URL eingen : htt://localhost:5500
+man sollte ein google konto haben
+
+//services worker :
+-Add to home screen
+https://developers.google.com/web/fundamentals/app-install-banners/native
+
+//in manifest hinzufügen:
+
+"prefer_related_applications": true,
+"related_applications": [
+  {
+    "platform": "play",
+    "id": "com.google.samples.apps.iosched"
+  }
+]
